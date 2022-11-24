@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importação de icones -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Links css -->
+    <link rel="stylesheet" href="css/styleDash.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/historicoDeCompras.css">
+    <link rel="stylesheet" href="css/rightTop.css">
+    <link rel="stylesheet" href="css/recenteUpdates.css">
+    <link rel="stylesheet" href="css/investimento.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <!-- <img src="img/LogoPng.png" alt="NO COFFEE NO CODE"> -->
+                    <h2>NO COFFEE<span class="danger"> NO CODE</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-symbols-outlined">space_dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+
+                <a href="Contas.html">
+                    <span class="material-symbols-outlined">person</span>
+                    <h3>Costomers</h3>
+                </a>
+
+                <a href="Settings.html">
+                    <span class="material-symbols-outlined">settings</span>
+                    <h3>Configuração</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-------------------- FINAL DA NAVBAR -------------->
+
+        <main>
+            <h1>Dashboard</h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="investimento">
+                    <span class="material-symbols-outlined">trending_up</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total investido</h3>
+                            <h1 class="incomes">R$ 0,00</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">last 24 horas</small>
+                </div>
+                <!--------------- FINAL DE SALES ------------------>
+
+                <div class="despesas">
+                    <span class="material-symbols-outlined">bar_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total de despesas</h3>
+                            <h1 class="expenses">R$ 0,00</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>62%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">last 24 horas</small>
+                </div>
+                <!--------------- FINAL DE EXPENSE ------------------>
+
+                <div class="rendimento">
+                    <span class="material-symbols-outlined">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total de renda</h3>
+                            <h1 class="total">$ 0,00</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>44%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">last 24 horas</small>
+                </div>
+                <!--------------- FINAL DE INCOME ------------------>
+            </div>
+            <!------------------- FINAL DAS TASK  ------------------>
+
+            <div class="recent-orders">
+                <h2>Historico de compras</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome do local</th>
+                            <th>Valor</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sorverteria Marcia</td>
+                            <td>R$ 10,00</td>
+                            <td>Dépito</td>
+                            <td class="warning">Aprovado</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Mecanico Joquim</td>
+                            <td>R$ 150,00</td>
+                            <td>Crédito</td>
+                            <td class="warning">Aprovado</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Mercado Carrefour</td>
+                            <td>R$ 350,25</td>
+                            <td>Crédito</td>
+                            <td class="warning">Aprovado</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Netflix</td>
+                            <td>R$ 45,90</td>
+                            <td>Crédito</td>
+                            <td class="warning">Pendente</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Padaria tres estrelas</td>
+                            <td>R$ 25,35</td>
+                            <td>Dépito</td>
+                            <td class="warning">Aprovado</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+        <!-------------------------- FINAL DA MAIN ------------------------->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-symbols-outlined active">light_mode</span>
+                    <span class="material-symbols-outlined">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p> Olá, <b>Marcos</b></p>
+                    </div>
+                    <div class="profile-foto">
+                        <img src="src/img/profile-1.jpg" alt="Foto do usuario">
+                    </div>
+                </div>
+            </div>
+            <!----------- FINAL DO TOP ------------>
+
+            <div class="recent-updates">
+                <h2>Recentes updates</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-foto">
+                            <img src="src/img/profile-2.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Juliano</b> Pagar para o Juliano segunda parcela do carro</p>
+                            <small class="text-muted">10 Minutos atrás</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-foto">
+                            <img src="src/img/profile-3.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Marcela</b> Pagar primeira parcela do celular</p>
+                            <small class="text-muted">28 Minutos atrás</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-foto">
+                            <img src="src/img/profile-4.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Carol</b> Pagar Aluguel</p>
+                            <small class="text-muted">47 Minutos atrás</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------- FINAL DOS RENCENTES UPDATES  ---------------->
+    </div>
+
+    <div id="modal-investimento" class="modal-container">
+        <div class="modal">
+            <button class="fechar">x</button>
+            <div class="resume">
+                <div>
+                    <h3>Entradas:</h3>
+                    <span class="incomes">R$ 0,00</span>
+                </div>
+                <div>
+                    <h3>Saídas:</h3>
+                    <span class="expenses">R$ 0,00</span>
+                </div>
+                <div>
+                    <h3>Total:</h3>
+                    <span class="total">R$ 0,00</span>
+                </div>
+            </div>
+            <div class="newItem">
+                <div class="divDesc">
+                    <label for="desc">Descrição</label>
+                    <input type="text" id="desc" />
+                </div>
+                <div class="divAmount">
+                    <label for="amount">Valor</label>
+                    <input type="number" id="amount" />
+                </div>
+                <div class="divType">
+                    <label for="type">Tipo</label>
+                    <select id="type">
+                        <option>Entrada</option>
+                        <option>Saída</option>
+                    </select>
+                </div>
+                <button id="btnNew">Incluir</button>
+            </div>
+            <div class="divTable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Descrição</th>
+                            <th class="columnAmount">Valor</th>
+                            <th class="columnType">Tipo</th>
+                            <th class="columnAction"></th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------- FINAL DA MODAL DE INVESTIMENTO ----------------------->
+
+    <script src="src/js/investimento.js"></script>
+    <script src="src/js/index.js"></script>
+    <script src="src/js/modal.js"></script>
+
+</body>
+
+</html>

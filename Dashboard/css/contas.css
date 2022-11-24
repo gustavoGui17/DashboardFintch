@@ -1,0 +1,136 @@
+:root {
+    --color-primary: #EF895F;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-theme-variables {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.gradient{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, black, rgb(31, 31, 31));
+}
+
+header img{
+    position: absolute;
+    top: 8px;
+    left: 60px;
+    width: 90px;
+}
+
+main h1{
+    position: absolute;
+    top: 21.7%;
+    left: 37%;
+    color: white;
+    font-size: 65px;
+}
+
+.profile{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    display: flex;
+    transform: translate( -50%);
+}
+
+.profile div{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background: linear-gradient(rgb(84, 84, 209), blue);
+    border-radius: 5px;
+}
+
+.profile div p{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+.profile div p{
+    padding: 15px;
+    margin: 5px;
+}
+
+.profile div img{
+    width: 200px;
+}
+
+.profile div:nth-child(1) p{
+    text-align: center;
+    position: relative;
+}
+.profile div:nth-child(2) p{
+    text-align: center;
+    position: relative;
+}
+.profile div:nth-child(3) p{
+    text-align: center;
+    position: relative;
+}
+.profile div:nth-child(4) p{
+    text-align: center;
+    position: relative;
+    right: 10%;
+    letter-spacing: -1px;
+    width: 100%;
+}
+.profile div:nth-child(5) p{
+    text-align: center;
+    position: relative;
+    right: 10%;
+    letter-spacing: -1px;
+    width: 100%;
+}
+
+
+div button{
+    background: none;
+    border: solid 1px rgba(204, 203, 203, 0.726);
+    padding: 10px 40px 10px 40px;
+    font-size: 25px;
+    color: rgba(204, 203, 203, 0.726);
+    position: absolute;
+    top: 70%;
+    left: 42%;
+}
+
+div button:hover{
+    border: solid 1px var(--color-primary);
+    color: var(--color-primary);
+    cursor: pointer;
+}

@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+    --color-primary: #EF895F;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-theme-variables {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.nome--email{
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.nome--email{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    display: flex ;
+    flex-direction: row;
+    width: 100vh;
+    height: 20vh;    
+    align-items: center;
+    transition: all 300ms ease;
+}
+
+.nome--email:hover {
+    box-shadow: none;
+}
+
+.nome--email__esq{
+    width: 40%;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.paragrafo--nom__esqum{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.nome--email__dir{
+    display: flex;
+    flex-direction: row;
+    justify-content: initial;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.048);
+    border-radius: var(--border-radius-2);
+    padding-left: 50px;
+}
+
+.input--nome{
+    display: flex;
+    flex-direction: column;    
+}
+
+.input--nome label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input--nome input{
+    border-radius: 8px;
+    height: 50px;
+    width: 200%;
+}
+
+.input--nome input::placeholder{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.253);
+}
+
+/* Fim da primeira placa*/
+
+.infopessoal{
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.infopessoal{
+    display: flex ;
+    flex-direction: row;
+    width: 100vh;
+    height: 25vh;    
+    align-items: center;
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.infopessoal:hover {
+    box-shadow: none;
+}
+
+.infopessoal--esq{
+    width: 40%;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.paragrafo--nom__esqum{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.infopessoal--dir__dois{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    height: 100%;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.048);
+    border-radius: var(--border-radius-2);
+    padding-left: 50px;
+}
+
+
+.input--email__dois{
+    display: flex;
+    flex-direction: column;    
+    margin-bottom: 10px;
+}
+
+.input--email__dois label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input--email__dois input{
+    border-radius: 8px;
+    height: 40px;
+    width: 70%;
+}
+
+.input--email__dois input::placeholder{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.253);
+}
+
+
+.inferior--infopessoal{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.input--cpf{
+    display: flex;
+    flex-direction: column;    
+    margin-bottom: 10px;
+    
+}
+
+.input--cpf label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input--cpf input{
+    border-radius: 8px;
+    height: 40px;
+    width: 98%;
+}
+
+.input--cpf input::placeholder{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.253);
+}
+
+.input--datnasc{
+    display: flex;
+    flex-direction: column;    
+    margin-bottom: 10px;
+    width: 36%;
+}
+
+.input--datnasc label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input--datnasc input{
+    border-radius: 8px;
+    height: 40px;
+    width: 98%;
+}
+
+.input--datnasc input::placeholder{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.253);
+}
+
+/* Fim da segunda placa*/
+
+.alterarsenha{
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.alterarsenha{
+    display: flex ;
+    flex-direction: row;
+    width: 100vh;
+    height: 30vh;    
+    align-items: center;
+    background: rgba(0, 0, 0, 0.137);
+    margin-bottom: 30px;
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.alterarsenha:hover {
+    box-shadow: none;
+}
+
+.alterarsenha--esq{
+    width: 40%;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.paragrafo--nom__esqum{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.alterarsenha--dir__dois{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    height: 100%;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.048);
+    border-radius: var(--border-radius-2);
+    padding-left: 50px;
+}
+
+.paragrafosenha{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input--senhaatual{
+    display: flex;
+    flex-direction: column;    
+    margin-bottom: 10px;
+}
+
+.input--senhaatual label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input--senhaatual input{
+    border-radius: 8px;
+    height: 40px;
+    width: 70%;
+}
+
+.input--senhaatual input::placeholder{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.253);
+}
+
+
+.input--senhanova{
+    display: flex;
+    flex-direction: column;    
+    margin-bottom: 10px;
+}
+
+.input--senhanova label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input--senhanova input{
+    border-radius: 8px;
+    height: 40px;
+    width: 70%;
+}
+
+.input--senhanova input::placeholder{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.253);
+}
+
+
+.input--senhaconfirm{
+    display: flex;
+    flex-direction: column;    
+    margin-bottom: 10px;
+}
+
+.input--senhaconfirm label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input--senhaconfirm input{
+    border-radius: 8px;
+    height: 40px;
+    width: 70%;
+}
+
+.input--senhaconfirm input::placeholder{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.253);
+}
+
+/* Final terceira placa */
+
+.enviar{
+    width: 30%;
+    border-radius: 10px;
+    height: 40px;
+    background: #fff;
+    margin-bottom: 50px;
+    transition: 0.5s;
+    font-weight: bold;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: var(--color-success);
+}
+
+.cancelar{
+    width: 30%;
+    border-radius: 10px;
+    height: 40px;
+    border: 2px;
+    border-style: solid;
+    border-color:rgba(0, 0, 0, 0.178);
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.cancelar:hover{
+    border-style: dashed;
+}
